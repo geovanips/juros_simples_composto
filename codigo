@@ -1,0 +1,34 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+    double j,c,i,t,m = 0;
+    char SI,CO;
+   cout << "##PROGRAMA PARA CALCULO DE JUROS SIMPLES E COMPOSTO###\n\n\n";
+   cout << "\nEscolha qual o tipo de juros: simples (SI) ou composto(CO)\n";
+   cin >> SI;
+           if ( SI == SI ) {
+
+               cout << " \nAgora digite separados por virgula o capital, taxa e o tempo (meses)";
+               cin >> c >> i >> t;
+               j = c* (i / 100) *t;
+               cout <<"\nO juros aplicado é :\t" << j;
+}
+           else
+               if ( CO == CO )
+               {
+
+                   cout << "\nAgora digite separados por virgula o capital, taxa e o tempo (meses)";
+                   cin >> c >> i >> t;
+                   i = i/100;
+                   m = c * (pow((1+i),t));
+                   cout << "\n o montante aplicado é: \t" << m;
+               }
+
+               else {
+                        cout << "Você digitou errado, para escolher entre simples e composto"
+                                " deve digitar SI ou CO. Por favor execute novamente o programa";
+                    }
+}
